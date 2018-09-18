@@ -1,0 +1,21 @@
+
+# Window           background    border    separator
+#rofi.color-window: #FFFFFF,      #FFFFFF,  #FFFFFF
+
+# State:           bg       fg       bgalt    hlbg     hlfg
+#rofi.color-normal: #FFFFFF, #404552, #FFFFFF, #FFFFFF, #A5CCFF
+#rofi.color-active: #FFFFFF, #404552, #FFFFFF, #FFFFFF, #A5CCFF
+#rofi.color-urgent: #FFFFFF, #404552, #FFFFFF, #FFFFFF, #A5CCFF
+
+rofi.theme: ~/.cache/wal/colors-rofi-dark.rasi
+
+#rofi.fullscreen: true
+#rofi.width: 100
+rofi.lines: 3
+rofi.eh: 2
+rofi.padding: 400
+#rofi.hide-scrollbar: true
+rofi.opacity: 85
+#rofi.position: center
+
+rofi.bw: 1
