@@ -1,0 +1,13 @@
+URxvt*background: black
+URxvt*foreground: white
+
+!URxvt.font: peep:style=Regular
+URxvt*font: xft:peep:style=Regular:pixelsize=12
+
+URxvt*scrollBar: false
+
+URxvt*internalBorder: 15
+
+! trying to fix w3m neofetch
+URxvt*transparent: false
+URxvt*depth: 32
