@@ -1,0 +1,10 @@
+{
+  "load_extensions": {
+    "nbextensions_configurator/config_menu/main": true,
+    "vim_binding/vim_binding": true
+  },
+  "Notebook": {
+    "Header": true,
+    "Toolbar": false
+  }
+}
