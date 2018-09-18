@@ -1,0 +1,112 @@
+[colors]
+foreground = ${xrdb:color8:#222}
+background = ${xrdb:color0:#222}
+
+foreground-inverse = ${xrdb:color0:#222}
+background-inverse = ${xrdb:color1:#222}
+
+foreground-faded = ${xrdb:color2:#222}
+background-raised = ${xrdb:color0:#222}
+
+foreground-prefix = ${xrdb:color2:#222}
+
+warning = ${xrdb:color3:#222}
+active-led = ${xrdb:color1:#222}
+
+
+; --------- ;
+[bar/datebar]
+
+
+width = 100%
+height = 24
+;offset-x = 40
+;offset-y = 8
+radius = 0
+fixed-center = true
+
+;background = ${colors.foreground-inverse}
+;foreground = ${colors.background-inverse}
+;foreground = #ffffff
+background = #ffffff
+foreground = #000000
+
+line-size = 3
+line-color = ${colors.foreground}
+
+; SET TRANSPARENT BORDER
+border-color = #00000000
+border-left-size = 520%
+border-right-size = 520%
+border-bottom-size = 0
+border-top-size = 12
+
+padding-left = 0
+padding-right = 0
+
+module-margin-left = 1
+module-margin-right = 1
+
+font-0 = "peep:antialias=false;size=8;2"
+
+modules-left = i3
+modules-center = date
+modules-right =
+
+tray-position = right
+;tray-padding =
+
+cursor-click = pointer
+cursor-scroll = ns-resize
+
+
+
+
+
+[module/date]
+type = internal/date
+interval = 5
+
+;date = "%a %d %b"
+date = ""
+date-alt = "%Y-%m-%d"
+
+time = "%I:%M %p "
+time-alt = %H:%M:%S
+
+;format-foreground = #fff
+;format-background = ${colors.foreground-faded}
+;format-padding = 3
+
+label = %date% %time%
+
+
+[module/i3]
+
+ws-icon-0 = 1;♚
+ws-icon-1 = 2;♛
+ws-icon-2 = 3;♜
+ws-icon-3 = 4;♝
+ws-icon-4 = 5;♞
+
+type = internal/i3
+format = <label-state> <label-mode>
+index-sort = true
+wrapping-scroll = false
+
+label-focused = %name%
+label-focused-foreground = #ffffff
+
+label-unfocused = %icon%
+
+
+
+[settings]
+screenchange-reload = true
+
+[global/wm]
+margin-top = 0
+margin-bottom = 0
+
+
+
