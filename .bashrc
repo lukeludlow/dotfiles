@@ -181,3 +181,6 @@ function parse_git_dirty {
 
 export PS1="\u@\h \w \`parse_git_branch\` "
 alias config='/usr/bin/git --git-dir=/home/luke/.cfg/ --work-tree=/home/luke'
+
+# access pywal colorscheme
+. ~/.cache/wal/colors.sh
