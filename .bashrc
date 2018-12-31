@@ -39,6 +39,13 @@ if [ -z "${debian_chroot:-}" ] && [ -r /etc/debian_chroot ]; then
     debian_chroot=$(cat /etc/debian_chroot)
 fi
 
+# use vim as default editor
+EDITOR=vim
+# use vim as default editor for graphical applications like ranger
+VISUAL=vim
+export VISUAL EDITOR=vim
+export EDITOR
+
 # set a fancy prompt (non-color, unless we know we "want" color)
 case "$TERM" in
     xterm-color|*-256color) color_prompt=yes;;
@@ -127,6 +134,8 @@ source /opt/ros/kinetic/setup.bash
 #source ~/.bash-git-prompt/gitprompt.sh
 
 alias xclip="xclip -selection clipboard"
+alias paste="xclip -o"
+alias copy="xclip -i"
 alias python="python3"
 alias g++="g++ --std=c++11"
 
@@ -184,3 +193,8 @@ alias config='/usr/bin/git --git-dir=/home/luke/.cfg/ --work-tree=/home/luke'
 
 # access pywal colorscheme
 . ~/.cache/wal/colors.sh
+
+alias test='./test.sh'
+source /opt/ros/kinetic/setup.bash
+source ~/BYU-Mars-Rover/gui_plugin_ws/devel/setup.bash
+source ~/BYU-Mars-Rover/rover_ws/devel/setup.bash
