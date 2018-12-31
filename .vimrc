@@ -48,7 +48,10 @@ nnoremap <leader>q :wq<cr>
 nnoremap <leader>w :w<cr>
 
 " matching brace
-inoremap { {<CR><BS>}<Esc>ko
+inoremap {<CR> {<CR>}<Esc>ko
 
 " disable next line continuation of comments 
 autocmd BufNewFile,BufRead * setlocal formatoptions-=cro
+
+" place yanked text into global clipboard
+set clipboard=unnamedplus
